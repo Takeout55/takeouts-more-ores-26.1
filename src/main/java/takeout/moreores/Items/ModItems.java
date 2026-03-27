@@ -33,6 +33,7 @@ public class ModItems {
         return item;
     }
 
+    // Creative Mode Items Tab
     public static final ResourceKey<CreativeModeTab> TAKEOUTS_MORE_ORES_ITEMSTAB_KEY = ResourceKey.create(
             BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(TakeoutsMoreOres.MOD_ID, "takeouts_more_ores_itemstab")
     );
@@ -44,11 +45,21 @@ public class ModItems {
 
             })
             .build();
-
+    // The Item Classes
     public static final Item REFINED_DIAMOND = register("refined_diamond", Item::new, new Item.Properties());
+    public static final Item RUBY = register("ruby", Item::new, new Item.Properties());
+    public static final Item SAPPHIRE = register("sapphire", Item::new, new Item.Properties());
+    public static final Item ZIRCON = register("zircon", Item::new, new Item.Properties());
+    public static final Item THIMEITE = register("thimeite", Item::new, new Item.Properties());
+    public static final Item PLUNGITE = register("plungite", Item::new, new Item.Properties());
+    public static final Item MULTIVERSIUM = register("multiversium", Item::new, new Item.Properties());
+    public static final Item EARIUM = register("earium", Item::new, new Item.Properties());
+    public static final Item OCARITE = register("ocarite", Item::new, new Item.Properties());
+    public static final Item GLITCHITE = register("glitchite", Item::new, new Item.Properties());
+    public static final Item FLAMING_TAKEITE = register("flaming_takeite", Item::new, new Item.Properties());
+    public static final Item FROZEN_TAKEITE = register("frozen_takeite", Item::new, new Item.Properties());
+    public static final Item CHEESIUM = register("cheesium", Item::new, new Item.Properties());
+    public static final Item GASNITE = register("gasnite", Item::new, new Item.Properties());
 
-    public static void initialize() {
-        //CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-        //        .register((itemGroup) -> itemGroup.accept(ModItems.REFINED_DIAMOND));
-    }
+    public static void initialize() {}
 }
