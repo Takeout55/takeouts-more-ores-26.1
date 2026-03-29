@@ -17,6 +17,9 @@ import takeout.moreores.TakeoutsMoreOres;
 import java.util.List;
 import java.util.function.Function;
 
+import static takeout.moreores.Blocks.ModBlocks.TAKEOUTS_MORE_ORES_BLOCKSTAB;
+import static takeout.moreores.Blocks.ModBlocks.TAKEOUTS_MORE_ORES_BLOCKSTAB_KEY;
+
 public class ModItems {
     public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         // Create the item key.
@@ -28,7 +31,7 @@ public class ModItems {
         // Register the item.
         Registry.register(BuiltInRegistries.ITEM, itemKey, item);
         // Register the group.
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, TAKEOUTS_MORE_ORES_ITEMSTAB_KEY, TAKEOUTS_MORE_ORES_ITEMSTAB);
+
 
         return item;
     }
@@ -42,9 +45,22 @@ public class ModItems {
             .title(Component.translatable("itemGroup.takeouts-more-ores-items"))
             .displayItems((params, output) -> {
                 output.accept(ModItems.REFINED_DIAMOND);
-
+                output.accept(ModItems.RUBY);
+                output.accept(ModItems.SAPPHIRE);
+                output.accept(ModItems.ZIRCON);
+                output.accept(ModItems.THIMEITE);
+                output.accept(ModItems.PLUNGITE);
+                output.accept(ModItems.MULTIVERSIUM_INGOT);
+                output.accept(ModItems.EARIUM);
+                output.accept(ModItems.OCARITE);
+                output.accept(ModItems.GLITCHITE);
+                output.accept(ModItems.FLAMING_TAKEITE);
+                output.accept(ModItems.FROZEN_TAKEITE);
+                output.accept(ModItems.CHEESIUM);
+                output.accept(ModItems.GASNITE);
             })
             .build();
+
     // The Item Classes
     public static final Item REFINED_DIAMOND = register("refined_diamond", Item::new, new Item.Properties());
     public static final Item RUBY = register("ruby", Item::new, new Item.Properties());
@@ -52,7 +68,7 @@ public class ModItems {
     public static final Item ZIRCON = register("zircon", Item::new, new Item.Properties());
     public static final Item THIMEITE = register("thimeite", Item::new, new Item.Properties());
     public static final Item PLUNGITE = register("plungite", Item::new, new Item.Properties());
-    public static final Item MULTIVERSIUM = register("multiversium", Item::new, new Item.Properties());
+    public static final Item MULTIVERSIUM_INGOT = register("multiversium_ingot", Item::new, new Item.Properties());
     public static final Item EARIUM = register("earium", Item::new, new Item.Properties());
     public static final Item OCARITE = register("ocarite", Item::new, new Item.Properties());
     public static final Item GLITCHITE = register("glitchite", Item::new, new Item.Properties());

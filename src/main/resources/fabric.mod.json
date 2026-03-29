@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "takeouts-more-ores",
 	"version": "${version}",
-	"name": "Takeout's More Ores!",
-	"description": "This mod adds more ores to the game!",
+	"name": "Takeouts More Ores",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Takeout55!"
+		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"takeout.moreores.TakeoutsMoreOresClient"
+		],
+		"fabric-datagen": [
+			"takeout.moreores.TakeoutsMoreOresDataGenerator"
 		]
 	},
 	"mixins": [

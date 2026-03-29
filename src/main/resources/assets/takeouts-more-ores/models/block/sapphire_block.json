@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "takeouts-more-ores:block/sapphire_block"
+  }
+}

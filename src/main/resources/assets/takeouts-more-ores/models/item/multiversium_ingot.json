@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "takeouts-more-ores:item/multiversium_ingot"
+  }
+}
